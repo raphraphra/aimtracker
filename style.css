@@ -1,0 +1,148 @@
+body{
+    background: linear-gradient(180deg, rgb(16, 8, 87), rgb(13, 2, 41));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.box{
+    border: 1px solid rgba(44, 30, 104, 0.5);
+    border-radius: 5cqb;
+    opacity: 0.8;
+    margin: auto;
+    margin-top: 1%;
+    padding: 1%;
+
+}
+
+.score{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    height: 7vh;
+
+}
+
+.percentage{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(142, 142, 199);
+}
+.local-score{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(164, 151, 212);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.target{
+    
+    position: absolute;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid rgb(165, 165, 224);
+    background-color: rgb(176, 169, 209);
+    animation-name: display;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes display {
+    to{
+        scale: 0;
+    }
+}
+
+.header{
+    margin-inline: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+.header > h1{
+    font-weight: 100;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+}
+
+.options, .option{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: Consolas;
+    transition: opacity 200ms ease-out, transform 200ms ease-out;
+}
+
+.options{
+    gap: 4vh;
+    margin-top: 5%;
+    flex-direction: column;
+    padding: 5%;
+    border: 3px solid blue;
+    border-radius: 3cqb;
+    background: linear-gradient(45deg, rgba(16, 16, 116, 1), rgb(11, 2, 48));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 40%;
+  
+}
+.option{
+    gap: 2vh;
+    text-align: left;
+    opacity: 0.2;
+}
+
+.option:hover{
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.play > button{
+    width: 300px;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(188, 180, 199);
+    background: linear-gradient(45deg, rgb(7, 7, 63), rgb(73, 52, 165));
+    background-size: 200%;
+    border: 2px solid rgb(35, 35, 177);
+    border-radius: 2cqb;
+    transition: background-position 10s cubic-bezier(0.19, 1, 0.22, 1), opacity 500ms cubic-bezier(0.19, 1, 0.22, 1),  transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0.8;
+    
+    
+}
+
+.play > button:hover{
+    background-position: 100%;
+    opacity: 1;
+    transform: scale(1.05) rotate(2deg);
+}
+
+
+
+
+
+
+
+
+

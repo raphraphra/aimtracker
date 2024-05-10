@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header" id="header">
+        <h1>Welcome to the aim tracker !</h1>
+    </div>
+
+    <div class="score">
+        <p class="percentage"><span id="percentage">0</span>%</p>
+        <p class="local-score" id="local-score">0</p>
+    </div>
+
+    <div class="wrapper">
+        <div class="options" id="options">
+            <div class="option">
+                <label for="box-width">Select the box width :</label>
+                <input name="box-width" type="range" id="width" min="1650" max="1800">
+            </div>
+            <div class="option">
+                <label for="box-height">Select the box height :</label>
+                <input name="box-height" type="range" id="height" min="620" max="700">
+            </div>
+            <div class="option">
+                <label for="cs">Select the circle size (px) :</label>
+                <input name="cs" type="range" id="cs" min="5" max="180">
+            </div>
+            <div class="option">
+                <label for="ar">Select the approach rate (transition) :</label>
+                <input name="ar" type="range" id="ar" min="100" max="5000">
+            </div>
+        </div>
+        <div class="play" id="play">
+            <button onclick="play()">Start !</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
